@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Webo</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+   <section id="header">
+    <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a  href="blog.html">Blog</a></li>
+            <li><a  href="about.html">About</a></li>
+            <li><a  href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a class="active" href="cart.html"><i  class="far fa-shopping-bag"></i></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i> </a>
+        </ul>
+    </div> 
+    <div id="mobile">
+       <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+       <i id="bar" class="fas fa-outdent"></i>        
+    </div>
+
+   </section>
+
+   <section id="paze-header" class="about-cart">
+    <h2>#let's_talk</h2>
+    <p>We offer a wide variety of fashionable clothing for men, women, and children.</p>
+    <p>"Together we achieve milestones."</p>
+   </section>
+
+   <section id="cart" class="section-p1">
+   <table width="100%">
+      <thead>
+        <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody  class="cartAddRow">
+        <tr>
+            <td><a href="#"><button class="danger normal">Remove</button></a></td>
+            <td><img src="img/products/f1.jpg" alt=""></td>
+            <td class="rowName">Cartoon Astronaut T-Shirts</td>
+            <td class="rowPrice">₹1449.00</td>
+            <td><input type="number" min="1" value="1"></td>
+            <td class="rowSum">₹1449.00</td>
+        </tr>
+        <tr>
+            <td><a href="#"><button class="danger normal">Remove</button></a></td>
+            <td><img src="img/products/f2.jpg" alt=""></td>
+            <td class="rowName">Cartoon Astronaut T-Shirts</td>
+            <td class="rowPrice">₹1449.00</td>
+            <td><input type="number" min="1" value="1"></td>
+            <td class="rowSum">₹1449.00</td>
+        </tr>
+        <tr>
+            <td><a href="#"><button class="danger normal">Remove</button></a></td>
+            <td><img src="img/products/f3.jpg" alt=""></td>
+            <td class="rowName">Cartoon Astronaut T-Shirts</td>
+            <td class="rowPrice">₹1449.00</td>
+            <td><input type="number" min="1" value="1"></td>
+            <td class="rowSum">₹1449.00</td>
+        </tr>
+      </tbody>
+   </table>
+   </section>
+
+<section id="cart-add"class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>₹ 1449</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>₹ 1449</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+    </div>
+</section>
+
+    <footer class="section-p1 ">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>contact</h4>
+        <p><strong>Address:</strong> Address: Dr. YK Baghel clinic, 493195, BB, CG</p>
+        <p><strong>Phone:</strong> +91 88888-9999 / +91 77777-55555</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00 , Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sing In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secure Payment Gateways </p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+    <div class="copyright">Copy Right - Swapnil Verma BMKJS @2023</div>
+  </footer>
+
+
+  <script>
+       
+    //For removing Product from Cart
+    const dangerButton = document.querySelectorAll('.danger');
+    //add a click event listener to each button
+    dangerButton.forEach(button =>{
+        console.log("remove button is worling");
+        button.addEventListener('click', () => {
+                //get th row containing the button
+                const row=button.closest('tr');
+                // remove the row
+                row.remove();
+                })
+    })
+
+
+        //RowSum
+        // Get all the rows in the table body
+        const rows = document.querySelectorAll('tbody tr');
+        // Loop through each row and add an event listener to the input field
+        rows.forEach(row => {
+        const input = row.querySelector('input');
+        const priceCell = row.querySelector('.rowPrice');
+        const sumCell = row.querySelector('.rowSum');
+        // Calculate and update the row sum when the input value changes
+        input.addEventListener('change', () => {
+        const price = parseFloat(priceCell.textContent.replace('₹', ''));
+        const quantity = parseInt(input.value);
+        const sum = price * quantity;
+        sumCell.textContent = '₹' + sum.toFixed(2);
+        });
+        });
+       
+    
+  
+
+  </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
